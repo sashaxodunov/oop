@@ -62,8 +62,7 @@ class DomElement {
   }
 }
 
-// создаём квадрат 100x100
-const square = new DomElement(".square", 100, 100, "blue", 16);
-
-// Вызов метода
-square.createElement();
+document.addEventListener("DOMContentLoaded", () => {
+  const square = new DomElement(".square", 100, 100, "blue", 16);
+  square.createElement();
+});
