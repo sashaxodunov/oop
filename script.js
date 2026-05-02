@@ -54,14 +54,16 @@ class DomElement {
       width: ${this.width}px;
       background: ${this.bg};
       font-size: ${this.fontSize}px;
+       position: absolute;
     `;
 
-    elem.textContent = "Новый элемент";
+    elem.textContent = "Квадрат 100х100";
     document.body.appendChild(elem);
   }
 }
 
-const element = new DomElement(".block", 150, 300, "green", 18);
+// создаём квадрат 100x100
+const square = new DomElement(".square", 100, 100, "blue", 16);
 
 // Вызов метода
-element.createElement();
+square.createElement();
